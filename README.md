@@ -24,5 +24,5 @@ Articles Reviewed: https://niksdeveloper.com/salesforce/drag-and-drop-in-lwc-lig
 LWC component to show Drag and Drop functionality
 
 
-![](https://drive.google.com/file/d/10fC-a3XlALplOqNVI_AbMXClL8VF37eq/view)
+![](https://github.com/ajiteshps/drag-dropSalesforce/blob/main/ezgif.com-gif-maker.gif)
 
