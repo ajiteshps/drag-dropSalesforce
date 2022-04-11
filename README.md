@@ -16,3 +16,13 @@ The `sfdx-project.json` file contains useful configuration information for your 
 - [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
 - [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
 - [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+
+
+**About This Project**
+Articles Reviewed: https://niksdeveloper.com/salesforce/drag-and-drop-in-lwc-lightning-web-component/
+
+LWC component to show Drag and Drop functionality
+
+
+![](https://drive.google.com/file/d/10fC-a3XlALplOqNVI_AbMXClL8VF37eq/view)
+
