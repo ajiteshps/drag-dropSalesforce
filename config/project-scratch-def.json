@@ -1,0 +1,17 @@
+{
+  "orgName": "ajiteshpratap.singh company",
+  "sourceOrg" : "00D6F0000028E6u",
+  "features": ["COMMUNITIES"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    }
+  }
+  
+}

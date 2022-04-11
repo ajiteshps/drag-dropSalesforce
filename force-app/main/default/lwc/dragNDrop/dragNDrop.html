@@ -1,0 +1,113 @@
+<!--
+  @description       : 
+  @author            : Ajitesh
+  @group             : 
+  @last modified on  : 04-11-2022
+  @last modified by  : Ajitesh
+-->
+<template>
+    <lightning-card>
+        <div slot="title">Drag & Drop</div>
+        <div class="slds-p-horizontal_small">
+            <lightning-spinner alternative-text="Loading" size="large" variant="brand" if:true={isLoading}></lightning-spinner>
+            <lightning-card title={account1NameHelper} ondragover={allowDrop} ondrop={drop}>
+                <lightning-layout multiple-rows>
+                    <template for:each={contacts1} for:item="contact">
+                        <lightning-layout-item key={contact.Id} padding="around-small" size="2">
+                            <div class="demo-only slds-box" draggable="true" data-contact={contact.Id} data-account={contact.AccountId} ondragstart={drag} style="background-color: #faf59b;">
+                                <article class="slds-tile slds-media">
+                                    <div class="slds-media__figure">
+                                        <lightning-icon  icon-name="action:user"  alternative-text="user" title="user"></lightning-icon>
+                                    </div> 
+                                    <div class="slds-media__body">
+                                        <h3 class="slds-tile__title slds-truncate" title="Lexee L. Jackson">
+                                            <a href="#">{contact.Name}</a>
+                                        </h3>
+                                        <div class="slds-tile__detail">
+                                            <dl class="slds-list_horizontal slds-wrap">
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate"
+                                                    title="Name">
+                                                    Name:</dt>
+                                                <dd class="slds-item_detail slds-truncate"
+                                                    title={contact.Name}>
+                                                    {contact.Name}</dd>
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate"
+                                                    title="Title">
+                                                    Title:</dt>
+                                                <dd class="slds-item_detail slds-truncate"
+                                                    title={contact.Title}>
+                                                    {contact.Title}</dd>
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate"
+                                                    title="Email">
+                                                    Email:</dt>
+                                                <dd class="slds-item_detail slds-truncate"
+                                                    title={contact.Email}>
+                                                    {contact.Email}</dd>
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate"
+                                                    title="Phone">
+                                                    Phone:</dt>
+                                                <dd class="slds-item_detail slds-truncate"
+                                                    title={contact.Phone}>
+                                                    {contact.Phone}</dd>
+                                                </dl>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </lightning-layout-item>
+                    </template>
+                </lightning-layout>
+            </lightning-card>
+
+            <lightning-card title={account2NameHelper} ondragover={allowDrop} ondrop={drop}>
+                <lightning-layout multiple-rows >
+                    <template for:each={contacts2} for:item="contact">
+                        <lightning-layout-item key={contact.Id} draggable="true" data-contact={contact.Id} data-account={contact.AccountId} ondragstart={drag} padding="around-small" size="2">
+                            <div class="demo-only slds-box" style="background-color: #aafac3;">
+                                <article class="slds-tile slds-media">
+                                    <div class="slds-media__figure">
+                                        <lightning-icon  icon-name="action:user"  alternative-text="user" title="user"></lightning-icon>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <h3 class="slds-tile__title slds-truncate" title="Lexee L. Jackson">
+                                            <a href="#">{contact.Name}</a>
+                                        </h3>
+                                        <div class="slds-tile__detail">
+                                            <dl class="slds-list_horizontal slds-wrap">
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate"
+                                                    title="Name">
+                                                    Name:</dt>
+                                                <dd class="slds-item_detail slds-truncate"
+                                                    title={contact.Name}>
+                                                    {contact.Name}</dd>
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate"
+                                                    title="Title">
+                                                    Title:</dt>
+                                                <dd class="slds-item_detail slds-truncate"
+                                                    title={contact.Title}>
+                                                    {contact.Title}</dd>
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate"
+                                                    title="Email">
+                                                    Email:</dt>
+                                                <dd class="slds-item_detail slds-truncate"
+                                                    title={contact.Email}>
+                                                    {contact.Email}</dd>
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate"
+                                                    title="Phone">
+                                                    Phone:</dt>
+                                                <dd class="slds-item_detail slds-truncate"
+                                                    title={contact.Phone}>
+                                                    {contact.Phone}</dd>
+                                                </dl>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </lightning-layout-item>
+                    </template>
+                </lightning-layout>
+            </lightning-card>
+        </div>
+    </lightning-card>
+
+</template>

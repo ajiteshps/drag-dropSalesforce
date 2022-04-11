@@ -1,0 +1,19 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true,
+      "dependencies": [
+        {
+          "package": "GovernorLimits@ver 0.2"
+        }
+      ]
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "50.0",
+  "packageAliases": {
+    "GovernorLimits@ver 0.2": "04t4x00000067j4AAA"
+  }
+}
